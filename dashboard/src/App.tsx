@@ -17,7 +17,14 @@ import { authProvider } from "./authProvider";
 import { dataProvider } from "./dataProvider";
 
 import { RaceList, RaceShow } from "./pages/races";
-import { DriverList, DriverShow, DriverCreate, DriverEdit } from "./pages/drivers";
+import {
+  DriverList,
+  DriverShow,
+  DriverCreate,
+  DriverEdit,
+} from "./pages/drivers";
+
+import CustomLoginPage from "./pages/CustomLoginPage";
 
 export const App = () => (
   <Admin
@@ -25,6 +32,7 @@ export const App = () => (
     dashboard={Dashboard}
     dataProvider={dataProvider}
     authProvider={authProvider}
+    loginPage={CustomLoginPage}
   >
     <Resource
       icon={EmojiFlagsIcon}
